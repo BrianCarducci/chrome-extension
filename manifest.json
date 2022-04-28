@@ -3,13 +3,15 @@
 	"description": "Build an Extension!",
 	"version": "1.0",
 	"manifest_version": 3,
-	"background": {
-		"service_worker": "yo.js"
-	},
-	"permissions": [
-		"storage"
-	],
-	"action": {
-		"default_popup": "popup.html"
-	}
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.twitch.tv/*"
+			],
+			"js": [
+				"yo.js"
+			],
+			"run_at": "document_end"
+		}
+	]
 }
