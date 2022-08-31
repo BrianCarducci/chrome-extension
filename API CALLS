@@ -1,0 +1,8 @@
+API CALLS
+
+https://gql.twitch.tv/integrity
+{
+  "token": "v4.public.ddjfkdjfk",
+  "expiration": 1661988067125,
+  "request_id": "01GBT7VRSHYE34W2C3C3KS1R2G"
+}
