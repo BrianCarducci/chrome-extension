@@ -1,17 +1,13 @@
 {
-	"name": "Twitch Favorites",
-	"description": "Categorize your followed channels!",
-	"version": "1.0",
-	"manifest_version": 3,
-	"content_scripts": [
-		{
-			"matches": [
-				"*://*.twitch.tv/*"
-			],
-			"js": [
-				"yo.js"
-			],
-			"run_at": "document_end"
-		}
-	]
+  "name": "Twitch Favorites",
+  "description": "Categorize your followed channels!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["main.js"],
+      "run_at": "document_end"
+    }
+  ]
 }
